@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 group :test do
   gem 'cucumber'
   gem 'httparty'
-  gem 'watir-webdriver'
   gem 'rspec'
   gem 'minitest'
   gem 'minitest-reporters', '>= 0.5.0'
