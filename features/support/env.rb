@@ -1,7 +1,7 @@
 require 'yaml'
 require 'minitest/spec'
 
-SETTINGS = YAML.load_file("env/support/settings.yml")
+SETTINGS = YAML.load_file("env/settings.yml")
 
 class MinitestWorld
   include Minitest::Assertions
