@@ -7,6 +7,7 @@ group :test do
   gem 'rspec'
   gem 'minitest'
   gem 'minitest-reporters', '>= 0.5.0'
+  gem 'minitest-ci'
 end
 
 group :helpers do

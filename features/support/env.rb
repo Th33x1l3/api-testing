@@ -1,6 +1,7 @@
 require 'yaml'
 require 'minitest/spec'
 require 'minitest/assertions'
+require 'minitest/ci'
 require File.join(File.dirname(__FILE__),'..','..','lib_require.rb')
 
 SETTINGS = YAML.load_file("env/settings.yml")
