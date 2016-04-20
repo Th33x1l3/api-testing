@@ -1,3 +1,4 @@
+require 'httparty'
 class GetWeather
   include HTTParty
 
@@ -14,8 +15,7 @@ class GetWeather
 
   def get_current_weather
 
-    @response=self.class.get('/weather',:query=>{:q=>"#{@name},#{@country}"})
-
+    @response=self.class.get('/weather',:query=>{:q=>"#{@name},#{@country}", :appid=>SETTINGS['weatherapi']['key']})
   end
 
 end
